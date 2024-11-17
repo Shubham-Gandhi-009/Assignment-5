@@ -1,0 +1,72 @@
+\doxysection{Morse\+Code Class Reference}
+\hypertarget{class_morse_code}{}\label{class_morse_code}\index{MorseCode@{MorseCode}}
+
+
+The \doxylink{class_morse_code}{Morse\+Code} class handles encoding and decoding of messages using Morse code, leveraging a binary tree structure.  
+
+
+
+
+{\ttfamily \#include $<$Morse\+Code.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_morse_code_a4f457e323c0165b2bc8a9f8fcf105812}\label{class_morse_code_a4f457e323c0165b2bc8a9f8fcf105812} 
+{\bfseries Morse\+Code} ()
+\begin{DoxyCompactList}\small\item\em Constructs the \doxylink{class_morse_code}{Morse\+Code} object and initializes the tree and encoding map. \end{DoxyCompactList}\item 
+\Hypertarget{class_morse_code_a10f4307eb688aa2bcc908e4fcd842d53}\label{class_morse_code_a10f4307eb688aa2bcc908e4fcd842d53} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Morse\+Code} ()
+\begin{DoxyCompactList}\small\item\em Destructs the \doxylink{class_morse_code}{Morse\+Code} object and frees the tree memory. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_morse_code_af1d5724c2700cd04ac5007f52ff61fa7}{encode\+Message}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Encodes a plain text message into Morse code. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_morse_code_af2e34115847e63f7334f3fc2c3e4fce9}{decode\+Message}} (const std\+::string \&morse\+Code)
+\begin{DoxyCompactList}\small\item\em Decodes a Morse code message back into plain text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_morse_code}{Morse\+Code} class handles encoding and decoding of messages using Morse code, leveraging a binary tree structure. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_morse_code_af2e34115847e63f7334f3fc2c3e4fce9}\index{MorseCode@{MorseCode}!decodeMessage@{decodeMessage}}
+\index{decodeMessage@{decodeMessage}!MorseCode@{MorseCode}}
+\doxysubsubsection{\texorpdfstring{decodeMessage()}{decodeMessage()}}
+{\footnotesize\ttfamily \label{class_morse_code_af2e34115847e63f7334f3fc2c3e4fce9} 
+std\+::string Morse\+Code\+::decode\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{morse\+Code}{}\end{DoxyParamCaption})}
+
+
+
+Decodes a Morse code message back into plain text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morse\+Code} & The Morse code message to decode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded plain text message as a string. 
+\end{DoxyReturn}
+\Hypertarget{class_morse_code_af1d5724c2700cd04ac5007f52ff61fa7}\index{MorseCode@{MorseCode}!encodeMessage@{encodeMessage}}
+\index{encodeMessage@{encodeMessage}!MorseCode@{MorseCode}}
+\doxysubsubsection{\texorpdfstring{encodeMessage()}{encodeMessage()}}
+{\footnotesize\ttfamily \label{class_morse_code_af1d5724c2700cd04ac5007f52ff61fa7} 
+std\+::string Morse\+Code\+::encode\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Encodes a plain text message into Morse code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The plain text message to encode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The encoded Morse code message as a string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Morse\+Code.\+h\item 
+Morse\+Code.\+cpp\end{DoxyCompactItemize}

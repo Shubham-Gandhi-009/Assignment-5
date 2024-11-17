@@ -1,0 +1,40 @@
+\doxysection{Morse\+Code.\+h}
+\hypertarget{_morse_code_8h_source}{}\label{_morse_code_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MORSECODE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MORSECODE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_tree_node}{TreeNode}}\ }
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_tree_node_a8e98d1600b30075f18c80290ed09ae01}{letter}};\ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{struct_tree_node}{TreeNode}}*\ \mbox{\hyperlink{struct_tree_node_a5335e7d975822e87088ec2afdefb1736}{left}};\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{struct_tree_node}{TreeNode}}*\ \mbox{\hyperlink{struct_tree_node_a71b4faa364404d671943562b352b1b74}{right}};\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{struct_tree_node_a84d3dbd5da4fa8fec9750a43ae9ac0db}{TreeNode}}(\textcolor{keywordtype}{char}\ c);\ \ \ \ }
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_morse_code}{MorseCode}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_tree_node}{TreeNode}}*\ root;\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ std::unordered\_map<char,\ std::string>\ morseMap;\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{struct_tree_node}{TreeNode}}*\ buildMorseTree();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteTree(\mbox{\hyperlink{struct_tree_node}{TreeNode}}*\ node);\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_morse_code_a4f457e323c0165b2bc8a9f8fcf105812}{MorseCode}}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_morse_code_a10f4307eb688aa2bcc908e4fcd842d53}{\string~MorseCode}}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ \mbox{\hyperlink{class_morse_code_af1d5724c2700cd04ac5007f52ff61fa7}{encodeMessage}}(\textcolor{keyword}{const}\ std::string\&\ message);\ \ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ std::string\ \mbox{\hyperlink{class_morse_code_af2e34115847e63f7334f3fc2c3e4fce9}{decodeMessage}}(\textcolor{keyword}{const}\ std::string\&\ morseCode);}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MORSECODE\_H}}
+
+\end{DoxyCode}
